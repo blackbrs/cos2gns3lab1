@@ -1,0 +1,51 @@
+Jun 09 18:52:46.317 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Jun 09 18:52:46.317 HYPERVISOR: Started on IP = localhost, TCP port = 46559.
+Jun 09 18:52:46.327 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 09 18:52:46.328 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alexander/GNS3/projects/Laboratorio1/project-files/dynamips 
+Jun 09 18:52:46.328 GENERAL: working_dir=/home/alexander/GNS3/projects/Laboratorio1/project-files/dynamips
+Jun 09 18:52:46.328 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alexander/GNS3/projects/Laboratorio1/project-files/dynamips/99b8a8b1-ee9a-41dc-a725-747187e1b493 
+Jun 09 18:52:46.329 GENERAL: working_dir=/home/alexander/GNS3/projects/Laboratorio1/project-files/dynamips/99b8a8b1-ee9a-41dc-a725-747187e1b493
+Jun 09 18:52:46.329 HYPERVISOR: exec_cmd: vm create R8 8 c7200 
+Jun 09 18:52:46.329 VM: VM R8 created.
+Jun 09 18:52:46.330 HYPERVISOR: exec_cmd: vm set_con_tcp_port R8 5022 
+Jun 09 18:52:46.330 HYPERVISOR: exec_cmd: c7200 get_mac_addr R8 
+Jun 09 18:52:46.331 HYPERVISOR: exec_cmd: vm get_status R8 
+Jun 09 18:52:46.331 HYPERVISOR: exec_cmd: vm slot_add_binding R8 0 0 C7200-IO-FE 
+Jun 09 18:52:46.333 HYPERVISOR: exec_cmd: vm set_ios R8 /home/alexander/GNS3/images/IOS/c7200-advipservicesk9-mz.124-4.T1.image 
+Jun 09 18:52:46.333 HYPERVISOR: exec_cmd: c7200 set_mac_addr R8 ca08.0bdb.0000 
+Jun 09 18:52:46.334 HYPERVISOR: exec_cmd: vm set_disk0 R8 0 
+Jun 09 18:52:46.335 HYPERVISOR: exec_cmd: vm set_nvram R8 512 
+Jun 09 18:52:46.335 HYPERVISOR: exec_cmd: vm set_ram R8 512 
+Jun 09 18:52:46.336 HYPERVISOR: exec_cmd: vm get_status R8 
+Jun 09 18:52:46.336 HYPERVISOR: exec_cmd: vm slot_remove_binding R8 0 0 
+Jun 09 18:52:46.337 HYPERVISOR: exec_cmd: vm get_status R8 
+Jun 09 18:52:46.337 HYPERVISOR: exec_cmd: vm slot_add_binding R8 0 0 C7200-IO-2FE 
+Jun 09 18:52:46.338 HYPERVISOR: exec_cmd: vm get_status R8 
+Jun 09 18:52:46.338 HYPERVISOR: exec_cmd: vm slot_add_binding R8 1 0 PA-4T+ 
+Jun 09 18:52:46.339 HYPERVISOR: exec_cmd: vm get_status R8 
+Jun 09 18:52:46.339 HYPERVISOR: exec_cmd: vm set_idle_pc R8 0x60270810 
+Jun 09 18:52:50.436 HYPERVISOR: exec_cmd: nio create_udp udp-e31f46f0-49e2-4ac0-a9de-b6ec6abf2a34 10060 127.0.0.1 10061 
+Jun 09 18:52:50.659 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R8 1 1 udp-e31f46f0-49e2-4ac0-a9de-b6ec6abf2a34 
+Jun 09 18:52:50.659 HYPERVISOR: exec_cmd: vm get_status R8 
+Jun 09 18:52:51.138 HYPERVISOR: exec_cmd: nio create_udp udp-cb56bc81-c5b7-4322-bba5-b61a138a7031 10072 127.0.0.1 10073 
+Jun 09 18:52:51.140 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R8 1 0 udp-cb56bc81-c5b7-4322-bba5-b61a138a7031 
+Jun 09 18:52:51.141 HYPERVISOR: exec_cmd: vm get_status R8 
+Jun 09 18:52:57.327 HYPERVISOR: exec_cmd: vm set_ghost_status R8 2 
+Jun 09 18:52:57.328 HYPERVISOR: exec_cmd: vm set_ghost_file R8 /home/alexander/GNS3/projects/Laboratorio1/project-files/dynamips/c7200-advipservicesk9-mz.124-4.T1.image-512.ghost 
+Jun 09 18:52:57.329 HYPERVISOR: exec_cmd: vm get_status R8 
+Jun 09 18:52:57.330 HYPERVISOR: exec_cmd: vm set_config R8 configs/i8_startup-config.cfg 
+Jun 09 18:52:57.330 HYPERVISOR: exec_cmd: vm start R8 
+Jun 09 18:53:27.577 HYPERVISOR: exec_cmd: vm extract_config R8 
+Jun 09 18:53:43.292 HYPERVISOR: exec_cmd: vm get_status R8 
+Jun 09 18:53:43.293 HYPERVISOR: exec_cmd: vm stop R8 
+Jun 09 18:53:43.420 VM: VM R8 shutdown.
+Jun 09 18:53:43.421 HYPERVISOR: exec_cmd: vm extract_config R8 
+Jun 09 18:53:49.143 HYPERVISOR: exec_cmd: vm get_status R8 
+Jun 09 18:53:49.145 HYPERVISOR: exec_cmd: vm extract_config R8 
+Jun 09 18:53:49.601 HYPERVISOR: exec_cmd: vm get_status R8 
+Jun 09 18:53:49.601 HYPERVISOR: exec_cmd: vm extract_config R8 
+Jun 09 18:53:49.602 HYPERVISOR: exec_cmd: vm delete R8 
+Jun 09 18:53:49.602 VM: VM R8 destroyed.
+Jun 09 18:53:49.603 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 09 18:53:49.877 HYPERVISOR: Stopped.
+Jun 09 18:53:49.877 GENERAL: reset done.
